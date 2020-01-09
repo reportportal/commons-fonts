@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="Noto Sans">
+        <normal><![CDATA[com/epam/reportportal/fonts/noto-sans/NotoSans-Regular.ttf]]></normal>
+        <bold><![CDATA[com/epam/reportportal/fonts/noto-sans/NotoSans-Bold.ttf]]></bold>
+        <italic><![CDATA[com/epam/reportportal/fonts/noto-sans/NotoSans-Italic.ttf]]></italic>
+        <boldItalic><![CDATA[com/epam/reportportal/fonts/noto-sans/NotoSans-BoldItalic.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+        <exportFonts/>
+    </fontFamily>
+</fontFamilies>

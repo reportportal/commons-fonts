@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.epam.reportportal'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+wrapper {
+    gradleVersion = '5.4.1'
+}
