@@ -7,9 +7,12 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 project.ext.releaseMode = project.hasProperty('releaseMode')
 
 def scriptsUrl = 'https://raw.githubusercontent.com/reportportal/gradle-scripts/' +
-        (releaseMode ? getProperty('scripts.version') : 'develop')
+        (releaseMode ? getProperty('scripts.version') : 'github-release-action')
+
+project.ext.publishRepo = "https://maven.pkg.github.com/reportportal/commons-fonts"
 
 apply from: scriptsUrl + '/release-commons.gradle'
+apply from: scriptsUrl + '/release-github.gradle'
 
 repositories {
     mavenCentral()
@@ -19,5 +22,3 @@ repositories {
 wrapper {
     gradleVersion = '5.4.1'
 }
-
-afterReleaseBuild.dependsOn bintrayUpload
