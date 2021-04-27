@@ -12,11 +12,10 @@ def scriptsUrl = 'https://raw.githubusercontent.com/reportportal/gradle-scripts/
 project.ext.publishRepo = "https://maven.pkg.github.com/reportportal/commons-fonts"
 
 apply from: scriptsUrl + '/release-commons.gradle'
-apply from: scriptsUrl + '/release-github.gradle'
+apply from: scriptsUrl + '/signing.gradle'
 
 repositories {
     mavenCentral()
-    releaseMode ? maven { url "http://dl.bintray.com/epam/reportportal" } : maven { url 'https://jitpack.io' }
 }
 
 wrapper {
